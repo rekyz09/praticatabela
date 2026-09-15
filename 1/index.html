@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atividade prática sobre tabelas HTML — tabela de produtos com controle de estoque.">
+    <title>Tabela de Produtos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tabela de Produtos</h1>
+        <p class="subtitulo">Atividade prática sobre tabelas</p>
+    </header>
+
+    <main>
+        <div class="tabela-wrapper">
+            <table>
+                <caption>Produtos disponíveis para compra</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Características</th>
+                        <th scope="col">Imagem</th>
+                        <th scope="col">Estoque</th>
+                        <th scope="col">Selecionar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-estoque="5">
+                        <td>001</td>
+                        <td>Batata</td>
+                        <td>Alimento Natural</td>
+                        <td><img src="imagens/batata.png" alt="Batata" loading="lazy"></td>
+                        <td class="estoque"><span class="estoque-valor">5</span></td>
+                        <td class="selecionar">
+                            <input type="checkbox" id="produto-001" class="produto-checkbox" data-produto="Batata">
+                            <label for="produto-001" class="sr-only">Selecionar Batata</label>
+                        </td>
+                    </tr>
+                    <tr data-estoque="8">
+                        <td>002</td>
+                        <td>Cenoura</td>
+                        <td>Alimento Natural</td>
+                        <td><img src="imagens/cenoura.png" alt="Cenoura" loading="lazy"></td>
+                        <td class="estoque"><span class="estoque-valor">8</span></td>
+                        <td class="selecionar">
+                            <input type="checkbox" id="produto-002" class="produto-checkbox" data-produto="Cenoura">
+                            <label for="produto-002" class="sr-only">Selecionar Cenoura</label>
+                        </td>
+                    </tr>
+                    <tr data-estoque="4">
+                        <td>003</td>
+                        <td>Cebola</td>
+                        <td>Alimento Natural</td>
+                        <td><img src="imagens/cebola.png" alt="Cebola" loading="lazy"></td>
+                        <td class="estoque"><span class="estoque-valor">4</span></td>
+                        <td class="selecionar">
+                            <input type="checkbox" id="produto-003" class="produto-checkbox" data-produto="Cebola">
+                            <label for="produto-003" class="sr-only">Selecionar Cebola</label>
+                        </td>
+                    </tr>
+                    <tr data-estoque="12">
+                        <td>004</td>
+                        <td>Pão Francês</td>
+                        <td>Alimento Artesanal</td>
+                        <td><img src="imagens/pao.png" alt="Pão Francês" loading="lazy"></td>
+                        <td class="estoque"><span class="estoque-valor">12</span></td>
+                        <td class="selecionar">
+                            <input type="checkbox" id="produto-004" class="produto-checkbox" data-produto="Pão Francês">
+                            <label for="produto-004" class="sr-only">Selecionar Pão Francês</label>
+                        </td>
+                    </tr>
+                    <tr data-estoque="10">
+                        <td>005</td>
+                        <td>Pão de Forma</td>
+                        <td>Alimento Industrial</td>
+                        <td><img src="imagens/paof.png" alt="Pão de Forma" loading="lazy"></td>
+                        <td class="estoque"><span class="estoque-valor">10</span></td>
+                        <td class="selecionar">
+                            <input type="checkbox" id="produto-005" class="produto-checkbox" data-produto="Pão de Forma">
+                            <label for="produto-005" class="sr-only">Selecionar Pão de Forma</label>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6" class="linha-acao">
+                            <button type="button" id="btcomprar">Comprar</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <p id="mensagem" role="status" aria-live="polite"></p>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Senai</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
