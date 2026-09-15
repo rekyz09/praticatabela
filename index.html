@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Tabela de Produtos</h1>
+    <h2>Atividade prática sobre tabelas</h2>
+    <hr>
+</header>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="6">Tabela de Produtos</th>
+            </tr>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Características</th>
+                <th>Imagem</th>
+                <th>Estoque</th>
+                <th>Itens</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Batata</td>
+                <td>Alimento Natural</td>
+                <td><img src="/imagens/batata.png"></td>
+                <td>5</td>
+                <td><input type="checkbox" class="produto-checkbox" data-produto="Batata"></td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Cenoura</td>
+                <td>Alimento Natural</td>
+                <td><img src="/imagens/cenoura.png"></td>
+                <td>8</td>
+                <td><input type="checkbox" class="produto-checkbox" data-produto="Cenoura"></td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Cebola</td>
+                <td>Alimento Natural</td>
+                <td><img src="/imagens/cebola.png"></td>
+                <td>4</td>
+                <td><input type="checkbox" class="produto-checkbox" data-produto="Cebola"></td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Pão Francês</td>
+                <td>Alimento Artesanal</td>
+                <td><img src="/imagens/pao.png"></td>
+                <td>12</td>
+                <td><input type="checkbox" class="produto-checkbox" data-produto="Pão Francês"></td>
+            </tr>
+            <tr>
+                <td>005</td>
+                <td>Pão de Forma</td>
+                <td>Alimento Industrial</td>
+                <td><img src="/imagens/paof.png"></td>
+                <td>10</td>
+                <td><input type="checkbox" class="produto-checkbox" data-produto="Pão de Forma"></td>
+            </tr>
+            <tr>
+                <td colspan="6" align="center"><button type="button" id="btcomprar">Comprar</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <main>
+        <hr>
+        <h1>Senai</h1>
+    </main>
+</body>
+    <script src="script.js"></script>
+</html>
